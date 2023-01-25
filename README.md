@@ -1,9 +1,12 @@
 # Space-Invaders
+
+![Game-Over](https://user-images.githubusercontent.com/91551415/214528728-04894819-319f-4b6f-8f27-36b57426139b.PNG)
+## Description
 This is the project from the course called "How to Code: Simple Data" by UBCx.
 
 The Space Invaders is a interesting arcade video game using Beginning Student Language (BSL) within DrRacket. 
 
-Your goal is to defeat wave after wave of descending aliens with a horizontally moving tank.
+**Goal:** defeat waves after waves of descending aliens with a missle-shooting tank.
 
 ## Domain Analysis
 During the domain analysis phase, there are mainly four parts to consider:
@@ -20,15 +23,15 @@ During the domain analysis phase, there are mainly four parts to consider:
 - **Big-bang options**:
 	- BSL with 2htdp/universe module provides useful functionality for creating interactive, graphical programs.
 	- I use big-bang functions with 4 clauses to create an interactive game:
-		- **on-tick**: tell the program to tick in a given rate.
-		- **to-draw**: tell the program to render the image of the game.
-		- **on-key**: tell the program to read every keystroke from the user and react accordingly.
-		- **stop-when**: indicate the program when to stop the game and show the game-over image.
+		- **on-tick**: An event handler to tell the program to tick in a given rate.
+		- **to-draw**: A function to render the image of the game according to its state.
+		- **on-key**: An event handler to tell the program to read every keystroke from the user and react accordingly.
+		- **stop-when**: Takes a boolean function and a image. Render the image if the boolean function return true
 
-## Implementation
+## Code Implementation
 The implementation is simple. 
-1. I start with a single function big-bang (root).
-2. I split this function into several functions (node) with each function doing their own purpose.
+1. Start with a single function big-bang (root).
+2. Split the function into several functions (node) with each function doing their own purpose.
 3. These functions can be further split into smaller functions, fulfilling smaller tasks.
 4. The splitting ends when the "leaf" function require no more splitting.
 5. The whole program can be viewed as a giant tree, with the big-bang function at the root.
