@@ -5,6 +5,7 @@
 (require 2htdp/image)
 
 ;; Space Invaders
+;; To run the game, find the function called "main" and follow the instruction.
 
 
 ;; Constants:

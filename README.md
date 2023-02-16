@@ -39,7 +39,8 @@ The implementation is simple.
 ## How to play the game
 1. Download the "space-invaders-starter.rkt" file.
 2. Open the file with DrRacket, feel free to browse through the code to see the internal implementation
-3. Run the program. After you see **"All 90 tests passed!"**, type (main (make-game empty empty T0)) to start the game.
+3. Run the program by clicking the **"Run""** button at the top right. You should see **"All 89 tests passed!"**
+4. type **(main (make-game empty empty T0))** in the interacting window (the bottom panel) to start the game.
 4. Enjoy it and try not to die!
 
 

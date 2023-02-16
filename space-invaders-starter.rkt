@@ -371,7 +371,7 @@
 
 ;; ListOfInvader -> ListOfInvader
 ;; randomly add a invader (random x coordinate, top of the screen) to the given list
-(check-expect (add-random-invader empty) empty) ; can not test with check-expect
+;;(check-expect (add-random-invader empty) empty) ; can not test with check-expect
 (check-expect (add-random-invader LOI2) LOI2)
 
 ;(define (add-random-invader loinvader) loinvader) ;stub
